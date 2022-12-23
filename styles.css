@@ -1,107 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap'); /*200,400,600*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 :root {
-    --Red: hsl(0, 78%, 62%);
-    --Cyan: hsl(180, 62%, 55%);
-    --Orange: hsl(34, 97%, 64%);
-    --Blue: hsl(212, 86%, 64%);
-    --Very-Dark-Blue: hsl(234, 12%, 34%);
-    --Grayish-Blue: hsl(229, 6%, 66%);
-    --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    background-color: var(--Very-Light-Gray);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: var(--Very-Light-Gray);
 }
 
 main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .welcome-section {
-    margin: 0 auto;
-    padding-bottom: 1.5rem;
-    text-align: center;
-    line-height: 1.3rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .title {
-    font-size: 2rem;
-    font-weight: 200;
-    color: var(--Very-Dark-Blue);
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--Very-Dark-Blue);
 }
 
 .welcome-section h1 {
-    color: var(--Very-Dark-Blue);
+  color: var(--Very-Dark-Blue);
+  font-size: 2rem;
+  margin-top: -2.2rem;
 }
 
 .description {
-    color: var(--Grayish-Blue);
-    font-size: 0.9rem;
-    max-width: 480px;
+  color: var(--Grayish-Blue);
+  font-size: 0.85rem;
+  max-width: 480px;
+  margin-top: -0.5rem;
 }
 
 .cards-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.8rem;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
 }
 
 .middle-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
 .card {
-    max-width: 300px;
-    height: 200px;
-    background-color: white;
-    box-sizing: border-box;
-    padding: 0.4rem 1.6rem;
-    border-radius: 0.3rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 5px 26px -7px rgb(163, 163, 163);
+  max-width: 300px;
+  height: 220px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 26px -7px rgb(163, 163, 163);
 }
 
 .red {
-    border-top: 4px solid var(--Red);
+  border-top: 4px solid var(--Red);
 }
 
 .cyan {
-    border-top: 4px solid var(--Cyan);
+  border-top: 4px solid var(--Cyan);
 }
 
 .orange {
-    border-top: 4px solid var(--Orange);
+  border-top: 4px solid var(--Orange);
 }
 
 .blue {
-    border-top: 4px solid var(--Blue);
+  border-top: 4px solid var(--Blue);
 }
 
 .card p {
-    color: var(--Grayish-Blue);
-    font-size: 0.75rem;
-    margin-top: -0.6rem;
+  color: var(--Grayish-Blue);
+  font-size: 0.75rem;
+  margin-top: -0.6rem;
 }
 
 .card img {
-    width: 50px;
-    height: 50px;
-    align-self: flex-end;
-    margin-top: 1rem;
+  width: 52px;
+  height: 52px;
+  align-self: flex-end;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+  }
+
+  .description {
+    font-size: 0.75rem;
+    max-width: 400px;
+    margin-top: -0.5rem;
+  }
 }
