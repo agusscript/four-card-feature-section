@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - [Fron End Mentor solution](https://www.frontendmentor.io/solutions/four-card-feature-section-P46w-y4JmG)
-- [Live site](https://agusscript.github.io/Four-card-feature-section/)
+- [Live site](https://codepen.io/agusscript/pen/dyqBbrx)
 
 ## My process
 
